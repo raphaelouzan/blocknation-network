@@ -227,8 +227,6 @@ nav ul li .logo {
   border: 0;
   list-style: none;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   align-items: stretch;
   justify-content: flex-start;
   flex-direction: row;
@@ -306,8 +304,8 @@ nav ul li .logo {
   width: 100%;
 }
 .whofor .sm-padding {
-  padding-top: 70px;
 }
+
 .whofor ul {
   display: flex;
   margin-top: 70px;
