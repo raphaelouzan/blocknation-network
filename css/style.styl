@@ -13,6 +13,7 @@ body
 
 a
   text-decoration none
+  color #B02A7E
 
 .flex
   display flex
@@ -48,9 +49,11 @@ a.btn
   .apply-link
     display none
 
-
 .overflow
   overflow hidden
+
+.fifty-pixels-padding
+  padding 50px 50px !important
 
 /* Containers */
 
@@ -61,16 +64,27 @@ a.btn
   position relative
 
   @media screen and (max-width: 1120px)
-    padding 0px 50px
+    padding 0px 0px
+
 
 .half
   width 50%
+
+  @media screen and (max-width: 700px)
+    width 100%
+
 
 /* Nav */
 
 nav
   width 100%
   padding-top 40px
+
+  @media screen and (max-width: 990px)
+    padding 0px 50px
+
+  @media screen and (max-width: 650px)
+    padding 40px 0px 10px 0px
 
   ul
     display flex
@@ -89,8 +103,9 @@ nav
       @media screen and (max-width 960px)
         margin-top 20px
 
-      @media screen and (max-width 460px)
-        margin-right 20px
+      @media screen and (max-width 660px)
+        margin-right 0px
+        padding 10px 10px !important
 
       &:last-child
         margin-right 0px
@@ -102,6 +117,9 @@ nav
         font-weight 600
         text-transform uppercase
         letter-spacing -.03em
+
+        @media screen and (max-width 660px)
+          font-size 12px
 
         &:hover
           color rgba(55,56,60,.4)
@@ -311,15 +329,21 @@ nav
 
 /* Footer CTA */
 
+.flex-center
+  align-items center
+
 .footer-cta
   // background-color #101012
   padding-top 200px
-  margin-top 200px
+  margin-top 100px
 
   .lg-container
     position relative
     min-height 300px
     width 100%
+
+    @media screen and (max-width: 750px)
+      display block
 
   h2
     color #ffffff
@@ -327,9 +351,22 @@ nav
     left 0px
     line-height 1.06
 
+    @media screen and (max-width: 750px)
+      width 100%
+      display block
+
   .btn-container
     position absolute
     right 0%
+
+    @media screen and (max-width: 750px)
+      position relative
+      display block
+      margin-top 90px
+      width 100%
+
+    @media screen and (max-width: 460px)
+      text-align center
 
   a.btn
     background #DF4F2A
@@ -339,6 +376,10 @@ nav
     min-height 50px
     line-height 53px
     margin-top 16px
+
+    @media screen and (max-width: 460px)
+      display block !important
+      text-transform center
 
     &:hover
       background-color #B02A7E
@@ -355,12 +396,19 @@ nav
   height 700px
   padding-bottom 400px
 
+  @media screen and (max-width: 860px)
+    padding-bottom 100px !important
+    height 700px
+
 footer
   min-height 120px
 
   .lg-container
     position relative
     min-height 112px
+
+    @media screen and (max-width: 860px)
+      display block
 
   h3
     font-size 15px
@@ -369,6 +417,10 @@ footer
     font-weight 400
     opacity 0.9
     position absolute
+
+    @media screen and (max-width: 860px)
+      position relative
+      text-align center
 
     a
       color #ffffff
@@ -402,7 +454,10 @@ footer
     top 54px
     right 0px
     font-size 13px
-    opacity 0.3
+    opacity 0.7
+
+    @media screen and (max-width: 860px)
+      padding-top 20px
 
 /* Animations */
 
