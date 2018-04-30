@@ -341,7 +341,7 @@ nav ul li .logo {
   width: 50%;
 }
 .whofor ul li div img {
-  width: 158px;
+  width: 140px;
 }
 .whofor ul li h3 {
   padding: 20px 0px 0px 0px;
@@ -352,6 +352,11 @@ nav ul li .logo {
   font-weight: 700;
   font-size: 19px;
   line-height: 28px;
+}
+@media screen and (max-width: 450px) {
+  .whofor ul li h3 {
+    text-align: center;
+  }
 }
 .whofor ul li h3:first-child {
   padding: 20px 20px 20px 0px !important;
