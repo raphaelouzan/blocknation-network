@@ -1,0 +1,31 @@
+{
+  "name": "blocknation-network",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+    "amdefine": "^1.0.1",
+    "balanced-match": "^1.0.0",
+    "brace-expansion": "^1.1.8",
+    "concat-map": "^0.0.1",
+    "css-parse": "^1.7.0",
+    "debug": "^3.1.0",
+    "fs.realpath": "^1.0.0",
+    "glob": "^7.0.6",
+    "inflight": "^1.0.6",
+    "inherits": "^2.0.3",
+    "minimatch": "^3.0.4",
+    "minimist": "^0.0.8",
+    "mkdirp": "^0.5.1",
+    "ms": "^2.0.0",
+    "once": "^1.4.0",
+    "path-is-absolute": "^1.0.1",
+    "sax": "^0.5.8",
+    "source-map": "^0.1.43",
+    "stylus": "^0.54.5",
+    "wrappy": "^1.0.2"
+  },
+  "scripts": {
+    "start": "stylus -w css/style.styl -o css/style.css"
+  }
+}
